@@ -16,10 +16,15 @@
 
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common COSMIC OS stuff.
+$(call inherit-product, vendor/cos/common.mk)
 
-PRODUCT_NAME := lineage_mido
+#Official
+KBUILD_BUILD_HOST := Saturn
+KBUILD_BUILD_USER := Savitar
+COS_RELEASE := true
+
+PRODUCT_NAME := cos_mido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
