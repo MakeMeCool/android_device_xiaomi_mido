@@ -118,6 +118,9 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera \
     Snap
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl
 
 # Consumerir
 PRODUCT_PACKAGES += \
